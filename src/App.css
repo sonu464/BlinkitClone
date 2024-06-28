@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-text {
+  border: 0.1px solid #80808038;
+}
+
+.headerLeft,
+.headerRight,
+.headerCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerLeft {
+  flex: 4;
+}
+
+.headerCenter {
+  flex: 5;
+}
+
+.serachForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.serachInput {
+  cursor: pointer;
+  width: 90%;
+  border: 1px solid #80808038;
+  padding: 10px 15px;
+  border-radius: 10px;
+  padding-left: 40px;
+  background-color: #e9e9e957;
+}
+
+.searchFormIcon {
+  cursor: pointer;
+  position: absolute;
+  left: 7%;
+}
+
+.headerRight {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.loginBtn {
+  flex: 1;
+}
+
+.loginBtn > button {
+  border: none;
+  padding: 5px 10px;
+  color: #6c6c6c;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.addCartBtn {
+  flex: 2.5;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoLink:hover {
+  text-decoration: none;
+}
+
+.logoleft,
+.logoright {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.logoleft {
+  color: #f8cb46;
+}
+
+.logoright {
+  color: #73c04d;
+}
+
+.headerLeft .location {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 18px;
+  border-left: 0.1px solid #80808038;
+}
+
+.locationText {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.locationSelect {
+  font-size: 13px;
+  margin: 0;
+}
+
+.cartLogo {
+  border: none;
+  padding: 11px 8px;
+  border-radius: 5px;
+  background-color: rgb(12, 131, 31);
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bolder;
+}
+
+.cartIcon:hover {
+  transform: rotate(15deg);
+}
+
+.MuiDialog-container {
+}
+
+.dialogBoxLocation .MuiPaper-elevation {
+  padding: 20px;
+  border-radius: 0;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.changeLocation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.changeLocationText {
+  color: #4c4c4c;
+}
+
+.closeLocation {
+  cursor: pointer;
+}
+
+.selectLocation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.detectLocation {
+  background-color: #0c831f;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.detectLocation:hover {
+  background-color: #459220;
+}
+
+.locationOR {
+  margin: 0;
+  padding: 6px;
+  font-size: 10px;
+  background: #f3f3f3;
+  color: #8d8d8d;
+  border-radius: 100px;
+  border: 1px solid gray;
+}
+
+.searchLocation {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.locationName {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 2px 0px;
+  background-color: #efefef;
+  padding: 8px 9px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.locationName:hover {
+  background-color: #c7c7c787;
+}
+
+.locaitonActive {
+  background-color: #b9b6b6b0;
+}

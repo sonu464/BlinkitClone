@@ -1,0 +1,32 @@
+.feedContainer {
+  width: 100%;
+}
+
+.widget1 {
+  padding: 10px;
+}
+
+.widget1 img {
+  width: 100%;
+}
+
+.widget2 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.widget2Info img {
+  width: 330px;
+  cursor: pointer;
+}
+
+.widget3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.widget3Items img {
+  width: 120px;
+}
