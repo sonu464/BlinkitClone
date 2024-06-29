@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./HomePage.module.css";
-import Widget4 from "../../component/Header/HomeWidget/Widget4";
+import Widget4 from "../../component/HomeWidget/Widget4";
 
 function Home() {
   const widget3Item = [

@@ -161,9 +161,6 @@ body {
   transform: rotate(15deg);
 }
 
-.MuiDialog-container {
-}
-
 .dialogBoxLocation .MuiPaper-elevation {
   padding: 20px;
   border-radius: 0;
@@ -238,4 +235,23 @@ body {
 
 .locaitonActive {
   background-color: #b9b6b6b0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  border: none !important;
+  width: 30px !important;
+  background-color: #ffffff !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50px !important;
+  color: black !important;
+  box-shadow: 0px 0px 10px -4px black !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 12px !important;
 }
