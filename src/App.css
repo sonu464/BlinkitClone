@@ -255,3 +255,24 @@ body {
 .swiper-button-next:after {
   font-size: 12px !important;
 }
+
+.MuiDialog-container {
+  height: 112% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.dialogBoxCart {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dialogBoxCart .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  border-radius: 0;
+  background-color: #f2f7ff;
+}

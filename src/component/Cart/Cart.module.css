@@ -1,0 +1,280 @@
+.cartBox {
+  width: 380px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.cartUpperBox {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+.cartUpperBox > p {
+  margin: 0 !important;
+}
+
+.userCartItem {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 13px;
+  background-color: white;
+  padding: 10px 12px;
+  flex-direction: column;
+  gap: 15px;
+  margin: 13px;
+}
+
+.noOfItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cartTiming {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  justify-content: center;
+  background-color: #e1e1e147;
+  height: 40px;
+  border-radius: 9px;
+}
+
+.cartTimingClock {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.cartTimeNo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.cartTimeNo > h4 {
+  font-size: 15px !important;
+  margin: 0 !important;
+  font-weight: 800;
+  color: black;
+}
+.cartTimeNo > p {
+  font-size: 12px;
+  margin: 0 !important;
+}
+
+.selectedCartItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.cartItemImg {
+  width: 80px;
+  height: 80px;
+  background-color: #e1e1e147;
+}
+
+.cartItemImg > img {
+  width: 100%;
+  border: 1px solid #e5e5e5a3;
+  border-radius: 5px;
+}
+
+.cartItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 20px;
+}
+
+.cartItemInfo > p {
+  margin: 0 !important;
+  font-size: 10px;
+}
+.cartItemInfo > span {
+  margin: 0 !important;
+  font-size: 11px;
+  color: black;
+  font-weight: 900;
+}
+
+.cartItemInfo > h6 {
+  margin: 0 !important;
+  font-size: 12px;
+}
+
+.cartPlusMinusBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(49, 134, 22);
+  padding: 3px 4px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.cartPlusMinusBtn > button {
+  border: none;
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 15px 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.cartPlusMinusBtn > p {
+  margin: 0 !important;
+  color: white;
+  font-size: 13px;
+}
+
+.billDetails {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 13px;
+  background-color: white;
+  padding: 10px 12px;
+  flex-direction: column;
+  gap: 5px;
+  margin: 13px;
+}
+
+.billDetails > h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  font-family: system-ui;
+}
+
+.itemChargesInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.itemCharges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.deliveryChargesFree {
+  display: flex;
+  font-size: 12px;
+  gap: 8px;
+}
+
+.deliveryChargesFree > p {
+  text-decoration: line-through;
+  margin: 0 !important;
+}
+
+.deliveryChargesFree > span {
+  margin: 0 !important;
+  color: #256fef;
+}
+
+.itemChargesIcon {
+  margin-right: 7px;
+}
+
+.itemCharges > p {
+  margin: 0 !important;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemCharges > h5 {
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+}
+.itemCharges > span {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
+
+.cancelOrder {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 13px;
+  background-color: white;
+  padding: 15px 12px;
+  flex-direction: column;
+  gap: 5px;
+  margin: 13px;
+}
+.cancelOrder > h6 {
+  font-size: 14px;
+  font-weight: bolder;
+  color: black;
+  margin: 0 !important;
+}
+.cancelOrder > p {
+  margin: 0 !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgb(130, 130, 130);
+  padding-bottom: 12px;
+}
+
+.placeOrder {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 20px 20px 0px 0px;
+  background-color: white;
+  padding: 15px 12px;
+  flex-direction: column;
+  gap: 5px;
+  position: sticky;
+  bottom: 0;
+}
+
+.orderInfo {
+  display: flex;
+  cursor: pointer;
+  padding: 10px 12px;
+  background-color: rgb(12, 131, 31);
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.orderAmount > h5 {
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  margin: 0 !important;
+}
+.orderAmount > p {
+  color: #e3e3e3;
+  margin: 0 !important;
+}
+
+.orderInfo > p {
+  color: white;
+  margin: 0 !important;
+}

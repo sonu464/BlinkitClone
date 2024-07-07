@@ -18,7 +18,7 @@ function Widget4({ BlinkItData }) {
       </div>
       <div className={classes.widget4Items}>
         <Swiper
-          slidesPerView={6}
+          slidesPerView={5.5}
           spaceBetween={10}
           navigation={true}
           modules={[Navigation]}

@@ -1,0 +1,73 @@
+.footer {
+  padding: 15px;
+  margin: 25px 0;
+}
+
+.footerContainer {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+
+.fBox1Links {
+  display: flex;
+  gap: 20%;
+  list-style: none;
+}
+
+.footerBox1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+}
+
+.fBox1HeadingText {
+  color: black;
+  font-weight: 700;
+}
+
+.fBox1Linksul {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fBox1Linksul > li {
+  list-style: none;
+}
+
+.fbox1LinkName {
+  color: #918181;
+}
+
+.fbox1LinkName:hover {
+  color: #939393;
+  text-decoration: none;
+}
+
+.footerBox2 {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fBox2Heading {
+  display: flex;
+  gap: 3%;
+}
+
+.fSeeAllCategories {
+  color: rgb(12, 131, 31);
+}
+.fSeeAllCategories:hover {
+  text-decoration: none;
+  color: rgb(12, 131, 31);
+}
+
+.fBox2Links {
+  display: flex;
+  gap: 10%;
+  list-style: none;
+}

@@ -4,9 +4,12 @@ import { BsCart, BsSearch } from "react-icons/bs";
 import Dialog from "@mui/material/Dialog";
 import { useQuery } from "@tanstack/react-query";
 import { fetchLocation } from "../../util/http";
+import Cart from "../Cart/Cart";
 
 function Header() {
   const [showLocationDialog, setShowLocationDialog] = useState(false);
+  const [showCartDialog, setShowCartDialog] = useState(false);
+
   const [filteredLocations, setFilteredLocations] = useState([]);
   const [locationClass, setLocationClass] = useState("");
   const [selectedLocation, setSelectedLocation] = useState(
@@ -20,6 +23,14 @@ function Header() {
 
   function handleLocationDialog() {
     setShowLocationDialog(true);
+  }
+
+  function showCart() {
+    setShowCartDialog(true);
+  }
+
+  function closeCartDialog(val) {
+    setShowCartDialog(val);
   }
 
   function closeLocationDialog() {
@@ -106,7 +117,7 @@ function Header() {
               <button>Login</button>
             </div>
             <div className="addCartBtn">
-              <button className="cartLogo">
+              <button onClick={showCart} className="cartLogo">
                 <BsCart className="cartIcon" />
                 My Cart
               </button>
@@ -132,6 +143,9 @@ function Header() {
           />
         </div>
         <ul>{location}</ul>
+      </Dialog>
+      <Dialog open={showCartDialog} className="dialogBoxCart">
+        <Cart onSendData={closeCartDialog} />
       </Dialog>
     </div>
   );

@@ -302,7 +302,7 @@ function Home() {
           </div>
         ))}
       </div>
-      <Widget4 BlinkItData={blinkitData} />;
+      <Widget4 BlinkItData={blinkitData} />
     </div>
   );
 }

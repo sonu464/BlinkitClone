@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import Header from "./component/Header/Header";
+import Footer from "./component/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </QueryClientProvider>
   );
