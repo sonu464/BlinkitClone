@@ -72,6 +72,7 @@ function Home() {
       name: "Dairy, Bread & Eggs",
       data: [
         {
+          id: "i1",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -79,6 +80,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i2",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -86,6 +88,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i3",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -93,6 +96,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i4",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -100,6 +104,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i5",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -107,6 +112,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i6",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -114,6 +120,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i7",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -121,6 +128,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i8",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -128,6 +136,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i9",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -135,6 +144,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i10",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -142,6 +152,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i11",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -149,6 +160,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i12",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -156,6 +168,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i13",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",
@@ -163,6 +176,7 @@ function Home() {
           itemPrice: "Rs 90",
         },
         {
+          id: "i14",
           itemImg: "/homepics/widget4item.avif",
           itemName: "Harvest Gold - White Bread",
           itemDuration: "8 Mins",

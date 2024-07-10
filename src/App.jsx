@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Header from "./component/Header/Header";
 import Footer from "./component/Footer/Footer";
 import Home from "./Pages/Home/Home";
+import SelectedItem from "./Pages/SelectedItem/SelectedItem";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
@@ -20,6 +21,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
+          <Route
+            path="/prn/:itemName/prid/:itemID"
+            exact={true}
+            element={<SelectedItem />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -2,15 +2,14 @@ import React, { useRef } from "react";
 import classes from "./Widget4.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
+
+import { Link } from "react-router-dom";
+
 import { Navigation } from "swiper/modules";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import { FaClock, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 
 function Widget4({ BlinkItData }) {
-  const sliderRef = useRef(null);
-
   const showingWidget = BlinkItData.map((item, index) => (
     <div key={index} className={classes.widget4}>
       <div className={classes.widget4Heading}>
@@ -26,33 +25,27 @@ function Widget4({ BlinkItData }) {
         >
           {item.data.map((val, index) => (
             <SwiperSlide key={index} className={classes.swiperSlide}>
-              <div className={classes.widget4Item}>
-                <div className={classes.widget4ItemPic}>
-                  <img src={val.itemImg} alt={val.itemName} />
-                </div>
-                <div className={classes.widget4ItemInfo}>
-                  <div className={classes.time}>
-                    <FaClock /> {val.itemDuration}
+              <Link to={`/prn/${val.itemName}/prid/${val.id}`}>
+                <div className={classes.widget4Item}>
+                  <div className={classes.widget4ItemPic}>
+                    <img src={val.itemImg} alt={val.itemName} />
                   </div>
-                  <p className={classes.title}>{val.itemName}</p>
-                  <p className={classes.itemInfo}>{val.itemInfo}</p>
-                  <div className={classes.itemBtn}>
-                    <p>{val.itemPrice}</p>
-                    <button className={classes.addtocartBtn}>ADD</button>
+                  <div className={classes.widget4ItemInfo}>
+                    <div className={classes.time}>
+                      <FaClock /> {val.itemDuration}
+                    </div>
+                    <p className={classes.title}>{val.itemName}</p>
+                    <p className={classes.itemInfo}>{val.itemInfo}</p>
+                    <div className={classes.itemBtn}>
+                      <p>{val.itemPrice}</p>
+                      <button className={classes.addtocartBtn}>ADD</button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* <div className={classes.widget4ArrowBtn}>
-          <button className={classes.widget4LeftArrow}>
-            <FaArrowLeft />
-          </button>
-          <button className={classes.widget4RightArrow}>
-            <FaArrowRight />
-          </button>
-        </div> */}
       </div>
     </div>
   ));

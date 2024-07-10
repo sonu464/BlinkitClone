@@ -9,24 +9,28 @@ export default function Cart({ onSendData }) {
   const [grandTotal, setGrandTotal] = useState(0);
   const CARTITEM_DATA = [
     {
+      id: "i1",
       itemName: "Harvest Gold - White Bread",
       weight: "350g",
       price: 28,
       img: "/homepics/widget4item.avif",
     },
     {
+      id: "i2",
       itemName: "Harvest Gold - White Bread",
       weight: "350g",
       price: 28,
       img: "/homepics/widget4item.avif",
     },
     {
+      id: "i3",
       itemName: "Harvest Gold - White Bread",
       weight: "350g",
       price: 28,
       img: "/homepics/widget4item.avif",
     },
     {
+      id: "i4",
       itemName: "Harvest Gold - White Bread",
       weight: "350g",
       price: 28,
@@ -67,7 +71,7 @@ export default function Cart({ onSendData }) {
           </div>
           <div className={classes.cartTimeNo}>
             <h4>Delivery in 10 minutes</h4>
-            <p>Shipment of 3 items</p>
+            <p>Shipment of {CARTITEM_DATA.length} items</p>
           </div>
         </div>
 
