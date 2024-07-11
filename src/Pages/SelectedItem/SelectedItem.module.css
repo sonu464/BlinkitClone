@@ -1,0 +1,79 @@
+.selectedItem {
+  display: flex;
+}
+.SILeftBox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.SILeftBoxImages {
+  width: 100%;
+  border-bottom: 1.5px solid #e9e9e97a;
+  border-right: 1.5px solid #e9e9e97a;
+  padding-bottom: 30px;
+  margin-bottom: 35px;
+}
+.SILeftBoxImg {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SILeftBoxImg > img {
+  height: 100%;
+}
+.SILeftBoxSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.SILeftBoxSliderBoxes {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.SelectedImg {
+  border: 1px solid green;
+}
+
+.SILeftBoxSliderBoxes > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.selectedItemInfo {
+}
+
+.selectedItemInfo > h4 {
+  font-size: 1.4rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.seletedItemInformation {
+  margin-top: 5px;
+}
+
+.seletedItemInformation > h6 {
+  color: #404040;
+}
+
+.seletedItemInformation > p {
+  color: #919191;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+/* right box css */
+.SIRightBox {
+  display: flex;
+  flex: 1;
+}

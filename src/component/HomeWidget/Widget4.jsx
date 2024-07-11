@@ -25,7 +25,7 @@ function Widget4({ BlinkItData }) {
         >
           {item.data.map((val, index) => (
             <SwiperSlide key={index} className={classes.swiperSlide}>
-              <Link to={`/prn/${val.itemName}/prid/${val.id}`}>
+              <Link to={`/prn/${val.itemName}/prid/${val.id}`} className={classes.widget4SelectedItem}>
                 <div className={classes.widget4Item}>
                   <div className={classes.widget4ItemPic}>
                     <img src={val.itemImg} alt={val.itemName} />
