@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import classes from "./SelectedItem.module.css";
+
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { BiRightArrow } from "react-icons/bi";
 
 const IMG_URL = [
   {
@@ -102,7 +105,80 @@ function SelectedItem() {
         </div>
       </div>
       {/* right box  */}
-      <div className={classes.SIRightBox}></div>
+      <div className={classes.SIRightBox}>
+        <div className={classes.SIRightBoxHomeLink}>
+          <span>
+            <Link>Home</Link>
+          </span>
+          /
+          <span>
+            <Link>Bread & Pav</Link>
+          </span>
+          /<span>Harvest Gold - White Bread</span>
+        </div>
+        <div className={classes.SIRightBoxMoreItem}>
+          <h3>Harvest Gold - White Bread</h3>
+          <span className={classes.SIRightBoxMin}>11MINS</span>
+          <Link>
+            View all by Harvest Gold{" "}
+            <BiRightArrow style={({ color: "green" }, { fontSize: "10px" })} />
+          </Link>
+        </div>
+        <div className={classes.SIRightBoxBorder}></div>
+
+        <div className={classes.SIRightBoxInfo}>
+          <div className={classes.SIRightBoxInformation}>
+            <p>350g</p>
+            <h4>MRP ₹28</h4>
+            <span>(Inclusive of all taxes)</span>
+          </div>
+          <div className={classes.SIRightBoxAddCart}>
+            <button>-</button>
+            <p>3</p>
+            <button>+</button>
+          </div>
+        </div>
+
+        <div className={classes.SIRightBoxwhy}>
+          <h4>Why shop from blinkit?</h4>
+          <div className={classes.SIRightBoxwhyPic}>
+            <div className={classes.SIRightBoxwhyImg}>
+              <img src="/whyB/w1.avif" alt="" />
+            </div>
+            <div className={classes.SIRightBoxwhyInfo}>
+              <h6>Superfast Delivery</h6>
+              <p>
+                Get your order delivered to your doorstep at the earliest from
+                dark stores near you.
+              </p>
+            </div>
+          </div>
+          <div className={classes.SIRightBoxwhyPic}>
+            <div className={classes.SIRightBoxwhyImg}>
+              <img src="/whyB/w2.avif" alt="" />
+            </div>
+            <div className={classes.SIRightBoxwhyInfo}>
+              <h6>Best Prices & Offers</h6>
+              <p>
+                Best price destination with offers directly from the
+                manufacturers.
+              </p>
+            </div>
+          </div>
+          <div className={classes.SIRightBoxwhyPic}>
+            <div className={classes.SIRightBoxwhyImg}>
+              <img src="/whyB/w3.avif" alt="" />
+            </div>
+            <div className={classes.SIRightBoxwhyInfo}>
+              <h6>Wide Assortment</h6>
+              <p>
+                Choose from 5000+ products across food, personal care, household
+                & other categories.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

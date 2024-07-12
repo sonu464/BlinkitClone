@@ -4,12 +4,13 @@
 .SILeftBox {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1.5;
+  border-right: 1.5px solid #e9e9e97a;
+  border-bottom: 1.5px solid #e9e9e97a;
 }
 .SILeftBoxImages {
   width: 100%;
   border-bottom: 1.5px solid #e9e9e97a;
-  border-right: 1.5px solid #e9e9e97a;
   padding-bottom: 30px;
   margin-bottom: 35px;
 }
@@ -50,6 +51,7 @@
 }
 
 .selectedItemInfo {
+  width: 70%;
 }
 
 .selectedItemInfo > h4 {
@@ -68,7 +70,7 @@
 
 .seletedItemInformation > p {
   color: #919191;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -76,4 +78,183 @@
 .SIRightBox {
   display: flex;
   flex: 1;
+  flex-direction: column;
+  padding: 40px;
+  padding-top: 60px;
+  border-bottom: 1.5px solid #e9e9e97a;
+}
+
+.SIRightBoxHomeLink {
+  color: #a5a5a5;
+}
+.SIRightBoxHomeLink > span > a {
+  color: #525252;
+}
+.SIRightBoxHomeLink > span > a:hover {
+  color: rgb(49, 134, 22);
+  text-decoration: none;
+}
+
+.SIRightBoxHomeLink > span {
+  color: #a5a5a5;
+  padding-right: 5px;
+  font-size: 13px;
+}
+
+.SIRightBoxMoreItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+}
+
+.SIRightBoxMoreItem > h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.SIRightBoxMin {
+  margin-bottom: 10px;
+  font-size: 11px;
+  color: #101010;
+  padding: 5px 10px;
+  background-color: #ebebeb94;
+  border-radius: 5px;
+}
+
+.SIRightBoxMoreItem > a {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(12, 131, 31);
+  gap: 3px;
+}
+
+.SIRightBoxMoreItem > a:hover {
+  text-decoration: none;
+  color: rgb(12, 131, 31);
+}
+
+.SIRightBoxBorder {
+  background-color: #c7c7c77a;
+  height: 0.5px;
+  margin: 15px 0px;
+}
+
+.SIRightBoxInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SIRightBoxInformation {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.SIRightBoxInformation > p {
+  border-radius: 5px;
+  color: #5a5a5a;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.SIRightBoxInformation > h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.SIRightBoxInformation > span {
+  color: gray;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.SIRightBoxAddCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(49, 134, 22);
+  padding: 3px 4px;
+  border-radius: 5px;
+  gap: 5px;
+  height: 30px;
+  width: 65px;
+}
+
+.SIRightBoxAddCart > button {
+  border: none;
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 15px 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.SIRightBoxAddCart > p {
+  margin: 0 !important;
+  color: white;
+  font-size: 13px;
+}
+
+.SIRightBoxwhy {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.SIRightBoxwhy > h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  margin-top: 10px;
+}
+
+.SIRightBoxwhyPic {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.SIRightBoxwhyImg {
+  width: 13%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SIRightBoxwhyImg > img {
+  width: 100%;
+  height: 100%;
+}
+
+.SIRightBoxwhyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 87%;
+}
+
+.SIRightBoxwhyInfo > h6 {
+  margin: 0;
+  font-size: 13px;
+  color: #999999;
+  font-weight: 400;
+}
+.SIRightBoxwhyInfo > p {
+  margin: 0;
+  font-size: 13px;
+  color: #b5b3b3;
+  font-weight: 400;
 }
